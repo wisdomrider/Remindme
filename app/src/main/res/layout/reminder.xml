@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardElevation="5dp">
+
+
+    <RelativeLayout
+        android:id="@+id/lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Youtube Reminder"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_marginRight="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/time"
+            android:text="Remember to Watch this " />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:id="@+id/from"
+            android:text="From : Youtube on "
+            android:layout_below="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:fontFamily="sans-serif-smallcaps"
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="12:30 AM"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
